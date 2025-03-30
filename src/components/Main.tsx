@@ -21,6 +21,7 @@ const Main: React.FC<MainProp> = ({ menuOpen, setMenuOpen }) => {
       if (
         menuRef.current &&
         e.target instanceof Node &&
+        //@ts-expect-error contains is valid
         menuRef.current.contains(e.target)
       ) {
         setMenuOpen(false);

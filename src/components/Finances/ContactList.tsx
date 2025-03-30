@@ -8,10 +8,6 @@ const ContactCard = ({
   link: string;
   number: string;
 }) => {
-  const handleEmailClick = (link: string) => {
-    window.location.href = `mailto:${link}`;
-  };
-
   return (
     <div className="flex mx-1 items-center gap-3">
       <div>
