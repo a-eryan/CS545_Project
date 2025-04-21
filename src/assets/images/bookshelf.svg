@@ -1,0 +1,20 @@
+<svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.80005 76.7925H88.3302C88.3302 78.2601 87.1404 79.4498 85.6728 79.4498H11.4574C9.98978 79.4498 8.80005 78.2601 8.80005 76.7925Z" fill="white"/>
+<rect x="6.23438" y="72.6609" width="84.5312" height="4.65734" rx="2.32867" fill="#A32638" stroke="white" stroke-width="2"/>
+<rect x="9.01416" y="18.813" width="16.6397" height="53.4108" rx="5" fill="#A32638" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25.4553" y="18.813" width="16.6397" height="53.4108" rx="5" fill="#A32638" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="17.2817" cy="49.9548" rx="3.06638" ry="4.43646" stroke="white" stroke-width="2"/>
+<ellipse cx="33.7751" cy="49.9548" rx="3.06638" ry="4.43646" stroke="white" stroke-width="2"/>
+<path d="M9.58301 29.1426H24.8497" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.58301 32.5352H24.8497" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.1418 29.1426H41.4085" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.1418 32.5352H41.4085" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="41.8962" y="18.813" width="16.6397" height="53.4108" rx="5" fill="#A32638" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="50.216" cy="49.9548" rx="3.06638" ry="4.43646" stroke="white" stroke-width="2"/>
+<path d="M42.2695 29.1426H57.5362" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42.269 32.5352H57.5357" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="57.1968" y="21.873" width="16.702" height="53.4659" rx="5" transform="rotate(-15 57.1968 21.873)" fill="white"/>
+<ellipse cx="73.3333" cy="49.8024" rx="3.06638" ry="4.43646" transform="rotate(-15 73.3333 49.8024)" fill="white" stroke="#A32638" stroke-width="2"/>
+<path d="M61.2595 31.4912L74.5127 27.94" stroke="#A32638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.1377 34.7681L75.3909 31.2169" stroke="#A32638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

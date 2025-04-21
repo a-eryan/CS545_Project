@@ -1,0 +1,62 @@
+[
+  {
+    "id": "canvas",
+    "name": "Canvas LMS",
+    "link": "https://www.instructure.com/canvas",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTyGmXtamIkl8WAwf00xBAZBUlNANNdQnoA&s"
+  },
+  {
+    "id": "workday",
+    "name": "Workday",
+    "link": "https://www.workday.com/",
+    "imageUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQGKeNem9seahg/company-logo_200_200/company-logo_200_200/0/1730301071878/workday_logo?e=2147483647&v=beta&t=0kH-6WKEl8ebq92a-L0un9EKXpY_tIyd7j6bSk5EoHM"
+  },
+  {
+    "id": "blackboard",
+    "name": "Blackboard Learn",
+    "link": "https://www.anthology.com/products/teaching-and-learning/learning-effectiveness/blackboard",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv9yH_kFJx0_yASMteXlk3ynzPBItq5JpLQ&s"
+  },
+  {
+    "id": "moodle",
+    "name": "Moodle",
+    "link": "https://moodle.org/",
+    "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_kR_OL7VBS0aarqPDBdteER4K2ANhWx18OKIDw7qDhVWiQ=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "id": "google-classroom",
+    "name": "Google Classroom",
+    "link": "https://edu.google.com/intl/ALL_us/workspace-for-education/products/classroom/",
+    "imageUrl": "https://managedmethods.com/wp-content/uploads/Blog-featured-archiving-google-classroom.jpg"
+  },
+  {
+    "id": "microsoft-teams",
+    "name": "Microsoft Teams for Education",
+    "link": "https://www.microsoft.com/en-us/education/products/teams",
+    "imageUrl": "https://assets.mofoprod.net/network/images/micorsoft-teams_logo.original.jpg"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "link": "https://zoom.us/",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/69/28/ef69285e-3255-d2f5-7bd1-9cabefa91a10/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024.jpg"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "link": "https://slack.com/",
+    "imageUrl": "https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png"
+  },
+  {
+    "id": "khan-academy",
+    "name": "Khan Academy",
+    "link": "https://www.khanacademy.org/",
+    "imageUrl": "https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png"
+  },
+  {
+    "id": "coursera",
+    "name": "Coursera",
+    "link": "https://www.coursera.org/",
+    "imageUrl": "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-76x76.png"
+  }
+]

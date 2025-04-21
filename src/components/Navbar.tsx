@@ -6,10 +6,12 @@ import { GoBell } from "react-icons/go";
 import { GoQuestion } from "react-icons/go";
 import { RxAvatar } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
+import { User, useUser } from "../store/userContext";
 
 type NavProp = {
   menuOpen: boolean;
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  user: User;
 };
 
 const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
@@ -21,6 +23,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
   const userSelectRef = useRef<HTMLDivElement>(null);
 
   const navigate = useNavigate();
+  const { setUser } = useUser();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -54,9 +57,10 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
           <Link to="">
             <h3 className="text-white">Change Password</h3>
           </Link>
-          <Link to="">
-            <h3 className="text-white">Sign Out</h3>
-          </Link>
+
+          <h3 className="text-white" onClick={() => setUser(null)}>
+            Sign Out
+          </h3>
           <Link to="">
             <h3 className="text-white">Emergency Info</h3>
           </Link>
@@ -75,7 +79,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
           className="mx-3"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <div className="h-[100%] overflow-hidden">
+        <div className="h-[100%] overflow-hidden" onClick={() => navigate("/")}>
           <img src={logo} className="max-w-full max-h-full object-contain" />
         </div>
       </div>
@@ -110,7 +114,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
 
         {showUserSelect && userSelect}
 
-        <GoQuestion size={40} />
+        <GoQuestion size={40} onClick={() => navigate("/support")} />
       </div>
     </nav>
   );

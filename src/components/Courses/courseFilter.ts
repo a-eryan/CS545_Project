@@ -1,0 +1,98 @@
+import { MultiSelectOption } from "../UI/Multiselect";
+
+export const filterOptions: Map<string, MultiSelectOption[]> = new Map([
+  [
+    "Subject",
+    [
+      { label: "Computer Science", value: "computer-science" },
+      { label: "Mathematics", value: "mathematics" },
+      { label: "Mechanical Engineering", value: "mechanical-engineering" },
+      { label: "School of Humanities, Arts ...", value: "humanities-arts" },
+      {
+        label: "Physics & Engineering Physics",
+        value: "physics-engineering-physics",
+      },
+    ],
+  ],
+  [
+    "Section Status",
+    [
+      { label: "Open", value: "open" },
+      { label: "Closed", value: "closed" },
+      { label: "Waitlist", value: "waitlist" },
+    ],
+  ],
+  [
+    "Campus Locations",
+    [
+      { label: "Hoboken - Main Campus", value: "hoboken" },
+      { label: "WebCampus", value: "webcampus" },
+      { label: "Off Campus", value: "off-campus" },
+    ],
+  ],
+  [
+    "Locations",
+    [
+      { label: "Babbio 321", value: "babbio-321" },
+      { label: "Gateway South 122", value: "gateway-south-122" },
+      { label: "ABS Engineering Center 301", value: "abs-301" },
+      { label: "Babbio 122", value: "babbio-122" },
+    ],
+  ],
+  [
+    "Instructional Format",
+    [
+      { label: "Online", value: "online" },
+      { label: "In Person", value: "inPerson" },
+    ],
+  ],
+]);
+
+export const selectTabs = [
+  { id: "All", name: "All" },
+  { id: "Undergraduate", name: "Undergraduate" },
+  { id: "Non-Degree", name: "Non-Degree" },
+  {
+    id: "Graduate",
+    name: "Graduate",
+  },
+  { id: "Doctoral", name: "Doctoral" },
+  {
+    id: "Certificate Programs",
+    name: "Certificate Programs",
+  },
+];
+
+export const yearOptions = [
+  { label: "All", value: "" },
+  { label: "Year 2023", value: "2023" },
+  { label: "Year 2024", value: "2024" },
+  { label: "Year 2025", value: "2025" },
+  { label: "Year 2026", value: "2026" },
+];
+
+export const semesterOptions = [
+  { label: "All", value: "" },
+  { label: "Spring", value: "spring" },
+  { label: "Summer", value: "summer" },
+  { label: "Fall", value: "fall" },
+  { label: "Winter", value: "winter" },
+];
+
+export type Course = {
+  id: string;
+  title: string;
+  subject: string;
+  status: string;
+  campus: string;
+  location: string;
+  delivery: string;
+  Instructor: string;
+  meetingPatterns: string;
+  academicPeriods: string;
+  degreeType: string;
+  program: string;
+  year: string;
+  term: string;
+  description: string;
+};
