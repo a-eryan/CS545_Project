@@ -41,11 +41,11 @@ const LoginCard: React.FC = () => {
   };
 
   return (
-    <div className="relative top-20 z-10 flex items-center justify-center w-full h-[80] pt-16 px-4">
+    <div className="flex items-center justify-center min-h-screen w-full px-4">
       <div className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8">
         <div className="flex justify-center">
           <img
-            src="/banner_steven.png"
+            src="https://ok14static.oktacdn.com/fs/bco/1/fs065kvts8xXrQTgE697"
             alt="Stevens Institute of Technology"
             className="h-12 mb-4"
           />

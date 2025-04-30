@@ -10,7 +10,7 @@ const LoginPage: React.FC = () => {
         style={{ backgroundImage: "url(/campus.png)" }}
       />
 
-      <header className="relative h-16 bg-[#8C2938]">
+      <header className="relative h-16 bg-[#A32638]">
         <div
           className="absolute top-0 left-25 transform -translate-x-1/2
                    bg-white w-25 h-30 flex justify-center"
@@ -23,7 +23,7 @@ const LoginPage: React.FC = () => {
         <LoginCard />
 
         <button className="absolute top-0 right-6 h-16 flex items-center">
-          <HiOutlineQuestionMarkCircle className="w-8 h-8 text-white" />
+          <HiOutlineQuestionMarkCircle className="w-10 h-10 text-white" />
         </button>
       </header>
       {/* Centered card */}
