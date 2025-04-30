@@ -102,7 +102,7 @@ const Home = () => {
             <Card
               title="Campus Resources"
               imageUrl={subtract}
-              link="/support"
+              link="/resources"
               className="col-span-2 bg-[var(--color-secondary)] text-white flex flex-col items-center justify-center p-4 rounded text-[3rem] font-medium not-italic leading-[100%] h-[180px]"
             />
           </article>
