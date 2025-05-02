@@ -31,7 +31,7 @@ const Notifications = () => {
 
   return (
     <div className="h-full items-start">
-      <Header title="Notifications" rightSide={<div>haha</div>} />
+      <div className="border-b border-[var(--color-primary)]"> <Header title="Notifications" rightSide={<div>haha</div>} /> </div>
       <div className="flex h-full">
         <ul className="min-w-[300px]">
           {notification.map((message) => (

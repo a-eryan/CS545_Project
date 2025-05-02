@@ -1,5 +1,15 @@
 import { MultiSelectOption } from "../UI/Multiselect";
 
+export function isCourseCompleted(course: any): boolean {
+  if (!course.startEndDate) return false;
+  
+  const endDateStr = course.startEndDate.split(' - ')[1];
+  const endDate = new Date(endDateStr);
+  const spring2025Start = new Date('01/20/2025');
+  
+  return endDate < spring2025Start;
+}
+
 export const filterOptions: Map<string, MultiSelectOption[]> = new Map([
   [
     "Subject",
@@ -63,16 +73,16 @@ export const selectTabs = [
   },
 ];
 
-export const yearOptions = [
-  { label: "All", value: "" },
-  { label: "Year 2023", value: "2023" },
-  { label: "Year 2024", value: "2024" },
-  { label: "Year 2025", value: "2025" },
+export const yearOptions = [ //make it the other way around, workday was notorious for this  
+  { label: "Academic Year", value: "" },
   { label: "Year 2026", value: "2026" },
+  { label: "Year 2025", value: "2025" },
+  { label: "Year 2024", value: "2024" },
+  { label: "Year 2023", value: "2023" },
 ];
 
 export const semesterOptions = [
-  { label: "All", value: "" },
+  { label: "Semester", value: "" },
   { label: "Spring", value: "spring" },
   { label: "Summer", value: "summer" },
   { label: "Fall", value: "fall" },

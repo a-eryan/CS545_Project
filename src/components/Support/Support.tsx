@@ -48,7 +48,9 @@ const Support = () => {
 
   return (
     <div>
-      <Header title="Student Help and Support" />
+      <div className="border-b-2 border-[var(--color-primary)]">
+        <Header title="Student Help and Support" />
+      </div>
       <div className="py-4 px-1">
         {selected && (
           <SelectTabs

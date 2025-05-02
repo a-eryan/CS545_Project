@@ -57,7 +57,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
             <h3 className="text-white">Change Password</h3>
           </Link>
 
-          <h3 className="text-white" onClick={() => setUser(null)}>
+          <h3 className="text-white cursor-pointer" onClick={() => setUser(null)}>
             Sign Out
           </h3>
           <Link to="">
@@ -88,8 +88,8 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
       <div className="flex gap-5">
         <div className="relative" onClick={() => navigate("/notifications")}>
           <GoBell size={40} />
-          <span className="absolute -top-1 -right-0 bg-yellow-400 text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-            {messageCount}
+          <span className="absolute -top-1 -right-0 bg-yellow-400 text-[var(--color-primary)] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+          {messageCount}
           </span>
         </div>
 

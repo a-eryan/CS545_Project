@@ -4,10 +4,15 @@ import { useState } from "react";
 
 const CourseCard = ({ course }: { course: Course }) => {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
+  
+  const capitalizeFirstLetter = (str: string) => { //helper function to capitalize first letter for course status
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+  
   return (
     <div
       className={
-        "overflow-hidden py-2 px-4 w-full transition-all text-[var(--color-main-text)] border-b-1 border-[var(--color-primary)]"
+        "overflow-hidden py-2 px-4 w-full transition-all text-[var(--color-main-text)] border-b-2 border-[var(--color-primary)]"
       }
     >
       <div className={"relative items-center py-3 gap-3 text-center "}>
@@ -16,10 +21,13 @@ const CourseCard = ({ course }: { course: Course }) => {
             {course.title}
           </h2>
           <p className="text-[var(--color-secondary-highlight)] text-left capitalize text-[16px]">
-            {course.subject} | {course.status} | {course.Instructor}
+            {course.subject} | {capitalizeFirstLetter(course.status)} | {course.Instructor}
           </p>
           <p className="text-[var(--color-primary)] text-left capitalize text-[16px]">
-            {course.location} | {course.meetingPatterns} | {course.delivery}
+            {course.location} | {course.meetingPatterns} | {course.delivery} | 
+            <span className="text-[var(--color-primary)] font-bold ml-1">
+              {capitalizeFirstLetter(course.status)}
+            </span>
           </p>
         </div>
 

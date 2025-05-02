@@ -19,7 +19,9 @@ const Academics = () => {
 
   return (
     <div>
-      <Header title="Academics" />
+      <div className="border-b-2 border-[var(--color-primary)]">
+        <Header title="Academics" />
+      </div>
       <div className="grid grid-cols-2 mt-7 gap-10">
         <section className="flex flex-col gap-5">
           <figure className="py-6 grid grid-cols-1 md:grid-cols-3 gap-4 bg-[var(--color-primary)] text-center rounded-2xl">
@@ -85,15 +87,15 @@ const Academics = () => {
               body={
                 <LinksPanel
                   links={[
-                    { name: "Course Catalog", link: "" },
+                    { name: "Course Catalog", link: "/courses" },
                     { name: "View My Saved Schedules", link: "" },
                     {
                       name: "Request Course Section Prerequisite Override",
                       link: "",
                     },
                     {
-                      name: "Request Course Section Prerequisite Override",
-                      link: "",
+                      name: "View My Courses",
+                      link: "/my-courses",
                     },
                   ]}
                 />

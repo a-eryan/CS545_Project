@@ -129,7 +129,9 @@ const CourseCatalog = () => {
 
   return (
     <div>
-      <Header title="Student Help and Support" />
+      <div className="border-b-2 border-[var(--color-primary)]">
+        <Header title="Course Catalog" />
+      </div>
       <div className="py-4 px-1">
         {selected && (
           <SelectTabs
@@ -159,8 +161,8 @@ const CourseCatalog = () => {
       </div>
       <div className="flex gap-4">
         <div className="min-w-[300px]">{renderFilter}</div>
-        <div className="flex-1 border-l border-t border-[var(--color-primary)]">
-          {filteredCourses.map((course) => (
+        <div className="flex-1 border-l-2 border-t-2 border-[var(--color-primary)]">
+        {filteredCourses.map((course) => (
             <CourseCard course={course} />
           ))}
         </div>

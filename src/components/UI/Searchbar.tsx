@@ -52,7 +52,8 @@ const Searchbar: React.FC = () => {
         className="flex min-w-[400px] items-center text-[1.5rem] border rounded px-2"
         onClick={() => setIsFocus(true)}
       >
-        {!isFocus && <IoSearchOutline size={30} />}
+        {/*search icon is now always visible */}
+        <IoSearchOutline size={30} />
         <input
           type="text"
           value={query}
