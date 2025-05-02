@@ -17,7 +17,7 @@ const Home = () => {
       id: "view_my_courses",
       icon: books,
       name: "View My Courses",
-      link: "/courses",
+      link: "/my-courses",
     },
     {
       id: "view_my_grades",
@@ -84,7 +84,7 @@ const Home = () => {
               link="/academics"
             />
             <Card title="Finances" imageUrl={moneyPig} link="/finances" />
-            <Card title="Library" imageUrl={subtract} link="/support" />
+            <Card title="Library" imageUrl={subtract} link="/resources" />
           </article>
         </div>
       </div>

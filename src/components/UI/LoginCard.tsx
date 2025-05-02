@@ -41,7 +41,7 @@ const LoginCard: React.FC = () => {
   };
 
   return (
-    <div className="relative top-20 z-10 flex items-center justify-center w-full h-[80] pt-16 px-4">
+    <div className="relative z-10 flex items-center justify-center w-full h-[85%] min-h-[400px] pt-16 px-4">
       <div className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8">
         <div className="flex justify-center">
           <img
@@ -61,7 +61,6 @@ const LoginCard: React.FC = () => {
         </div>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
-          {/* Username */}
           <div>
             <label className="block text-gray-700 mb-1 text-left">
               Username

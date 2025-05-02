@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface MultiSelectOption {
   label: string;
   value: string;

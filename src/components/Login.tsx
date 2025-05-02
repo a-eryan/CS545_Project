@@ -20,13 +20,12 @@ const LoginPage: React.FC = () => {
         >
           <img src="/logo2x.png" alt="Stevens logo" className="h-24 w-auto" />
         </div>
-        <LoginCard />
 
         <button className="absolute top-0 right-6 h-16 flex items-center">
           <HiOutlineQuestionMarkCircle className="w-8 h-8 text-white" />
         </button>
       </header>
-      {/* Centered card */}
+      <LoginCard />
     </div>
   );
 };
