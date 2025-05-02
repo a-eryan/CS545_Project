@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/STEVENSLOGO.png";
 import HamburgerButton from "./UI/Hamburger";
-import { IoSearchOutline } from "react-icons/io5";
 import { GoBell } from "react-icons/go";
 import { GoQuestion } from "react-icons/go";
 import { RxAvatar } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import { User, useUser } from "../store/userContext";
+import Searchbar from "./UI/Searchbar";
 
 type NavProp = {
   menuOpen: boolean;
@@ -15,7 +15,6 @@ type NavProp = {
 };
 
 const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
-  const [isFocus, setIsFocus] = useState(false);
   const [messageCount] = useState(0);
 
   const [showUserSelect, setShowUserSelect] = useState(false);
@@ -65,7 +64,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
             <h3 className="text-white">Emergency Info</h3>
           </Link>
           <Link to="">
-            <h3 className="text-white">My Reports</h3>
+            <h3 className="text-white">My Report</h3>
           </Link>
         </ul>
       </div>
@@ -84,22 +83,12 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
         </div>
       </div>
 
-      <div
-        className="flex min-w-[400px] items-center text-[1.5rem] border-1 rounded px-2"
-        onClick={() => setIsFocus(true)}
-      >
-        {!isFocus && <IoSearchOutline size={30} />}
-        <input
-          placeholder="What can I help you with today?"
-          className="ml-1 w-full focus:outline-none focus:ring-0 focus:border-transparent"
-          onBlur={() => setIsFocus(false)}
-        />
-      </div>
+      <Searchbar />
 
       <div className="flex gap-5">
         <div className="relative" onClick={() => navigate("/notifications")}>
           <GoBell size={40} />
-          <span className="absolute -top-1 -right-0 bg-yellow-400 text-[#A32638] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+          <span className="absolute -top-1 -right-0 bg-yellow-400 text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
             {messageCount}
           </span>
         </div>
