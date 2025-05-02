@@ -12,6 +12,7 @@ import CourseCatalog from "./Courses/CourseCatalog";
 import Resources from "./Resources/Resources";
 import LoginPage from "./Login";
 import { useUser } from "../store/userContext";
+import CourseTable from "./Courses/CourseTable";
 
 type MainProp = {
   menuOpen: boolean;
@@ -89,6 +90,7 @@ const Main: React.FC<MainProp> = ({ menuOpen, setMenuOpen }) => {
                   <Route path="/" element={<Home />} />
                   <Route path="/academics" element={<Academics />} />
                   <Route path="/courses" element={<CourseCatalog />} />
+                  <Route path="/my-courses" element={<CourseTable />} />
                   <Route path="/finances" element={<Finances />} />
                   <Route path="/support" element={<Support />} />
                   <Route path="/resources" element={<Resources />} />

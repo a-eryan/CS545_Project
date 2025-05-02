@@ -17,7 +17,7 @@ const Home = () => {
       id: "view_my_courses",
       icon: books,
       name: "View My Courses",
-      link: "/courses",
+      link: "/my-courses",
     },
     {
       id: "view_my_grades",
@@ -62,12 +62,14 @@ const Home = () => {
           <div className="flex flex-col">
             {/*shortcuts heading - now inside the left column */}
             <div className="mb-4 text-[var(--color-main-text)] flex justify-center items-center">
-              <p className="font-medium font-['Saira_Condensed'] text-2xl">My Shortcuts</p>
+              <p className="font-medium font-['Saira_Condensed'] text-2xl">
+                My Shortcuts
+              </p>
               <div className="ml-3 bg-[var(--color-primary)] p-[6px] w-6 h-6 rounded">
                 <FaPen className="text-white" size={12} />
               </div>
             </div>
-            
+
             {/*shortcuts list */}
             <ul className="flex flex-col gap-4 w-auto">
               {shortCuts.map((sc) => (
@@ -97,7 +99,7 @@ const Home = () => {
               link="/finances"
               className="bg-[var(--color-secondary)] text-white flex flex-col items-center justify-center p-8 rounded text-[3rem] font-medium not-italic leading-[100%]"
             />
-            
+
             {/* Bottom row - spanning card */}
             <Card
               title="Campus Resources"

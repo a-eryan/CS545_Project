@@ -61,7 +61,6 @@ const LoginCard: React.FC = () => {
         </div>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
-          {/* Username */}
           <div>
             <label className="block text-gray-700 mb-1 text-left">
               Username
