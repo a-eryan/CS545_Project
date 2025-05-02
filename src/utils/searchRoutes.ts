@@ -1,0 +1,23 @@
+export const searchRoutes = [
+  { keyword: "View My Courses", url: "/my-courses" },
+  { keyword: "View My Grades", url: "/my-courses" },
+  { keyword: "View Financial Aid", url: "/finances" },
+  { keyword: "View Statement", url: "/finances" },
+  { keyword: "Make an Online Payment", url: "/finances" },
+  { keyword: "Payment Plans / Options", url: "/finances" },
+  { keyword: "Financial Aid Portal", url: "/finances" },
+  { keyword: "1098-T Forms", url: "/finances" },
+  { keyword: "Add an Authorized Party", url: "/finances" },
+  { keyword: "Health Insurance Information", url: "/finances" },
+  { keyword: "Contact Student Accounts", url: "/finances" },
+  { keyword: "Course Catalog", url: "/courses" },
+  { keyword: "View My Saved Schedules", url: "/academics" },
+  {
+    keyword: "Request Course Section Prerequisite Override",
+    url: "/academics",
+  },
+  { keyword: "View My Academic Progress", url: "/academics" },
+  { keyword: "View My Academic Plan", url: "/academics" },
+  { keyword: "Create Saved Schedule from Plan", url: "/academics" },
+  { keyword: "Program Completion Request / Status", url: "/academics" },
+];
