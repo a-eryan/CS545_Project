@@ -57,10 +57,13 @@ h3 {
 }
 
 button:hover {
-  border-color: #646cff;
+  /*removed border color, was not working and didn't fit design scheme anyways*/
+  cursor: pointer; 
 }
+
 button:focus,
 button:focus-visible {
+  /*for accessibility*/
   outline: 4px auto -webkit-focus-ring-color;
 }
 

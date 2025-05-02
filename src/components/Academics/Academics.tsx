@@ -46,13 +46,13 @@ const Academics = () => {
             body={
               <figure className="bg-[var(--color-primary)] text-center flex flex-col items-center gap-2">
                 <div className="grid grid-cols-3 gap-4 p-3">
-                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)]">
+                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)] rounded">
                     Registration Appointments
                   </button>
-                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)]">
+                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)] rounded">
                     Generate Unofficial Transcript
                   </button>
-                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)]">
+                  <button className="!bg-[var(--color-main-text)] hover:!bg-[var(--color-secondary-highlight)] rounded">
                     View Grades
                   </button>
                 </div>

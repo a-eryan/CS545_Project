@@ -65,7 +65,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
             <h3 className="text-white">Emergency Info</h3>
           </Link>
           <Link to="">
-            <h3 className="text-white">My Report</h3>
+            <h3 className="text-white">My Reports</h3>
           </Link>
         </ul>
       </div>
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
       <div className="flex gap-5">
         <div className="relative" onClick={() => navigate("/notifications")}>
           <GoBell size={40} />
-          <span className="absolute -top-1 -right-0 bg-yellow-400 text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+          <span className="absolute -top-1 -right-0 bg-yellow-400 text-[#A32638] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
             {messageCount}
           </span>
         </div>

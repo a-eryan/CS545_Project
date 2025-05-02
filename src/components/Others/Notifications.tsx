@@ -30,8 +30,8 @@ const Notifications = () => {
   }, [notification]);
 
   return (
-    <div className="h-full">
-      <Header title="Norifications" rightSide={<div>haha</div>} />
+    <div className="h-full items-start">
+      <Header title="Notifications" rightSide={<div>haha</div>} />
       <div className="flex h-full">
         <ul className="min-w-[300px]">
           {notification.map((message) => (
@@ -48,8 +48,8 @@ const Notifications = () => {
                 <h3 className="text-[var(--color-primary)] text-2xl">
                   {message.header}
                 </h3>
-                {!message.isRead && <h3>🆕 New Message</h3>}
-              </div>
+                {!message.isRead && <h3 className="text-[var(--color-main-text)]">Unread Message</h3>}
+                </div>
 
               <p className="text-[var(--color-main-text)] mb-3">
                 {message.body.split(" ").length > 10
