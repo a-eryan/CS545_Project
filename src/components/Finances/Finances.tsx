@@ -25,7 +25,9 @@ const Finances = () => {
   });
   return (
     <div>
-      <Header title="Finances" />
+      <div className="border-b-2 border-[var(--color-primary)]">
+        <Header title="Finances" />
+      </div>
       <div className="grid grid-cols-2 mt-7 gap-10">
         <section className="flex flex-col gap-8">
           <figure className="py-9 grid grid-cols-1 md:grid-cols-2 gap-4 bg-[var(--color-primary)] text-center rounded-2xl">
@@ -51,7 +53,7 @@ const Finances = () => {
         </section>
         <section className="flex flex-col gap-8">
           <Container
-            title="Important Contacts"
+            title="Planning & Registration"
             isOpen={true}
             body={
               <LinksPanel
@@ -65,7 +67,7 @@ const Finances = () => {
             }
           />
           <Container
-            title="Important Contacts"
+            title="Academic Advising"
             isOpen={true}
             body={
               <LinksPanel

@@ -50,22 +50,23 @@ const LoginCard: React.FC = () => {
             className="h-12 mb-4"
           />
         </div>
-
         <h1 className="text-[var(--color-main-text)] text-center mb-2">
           Welcome to MyStevens!
         </h1>
         <div className="flex items-center justify-center mb-6">
-          <hr className="flex-grow border-[var(--color-primary)]" />
-          <img src={star} className="h-4 w-4 mx-2" alt="" />
-          <hr className="flex-grow border-[var(--color-primary)]" />
+          <hr className="flex-grow border-2 border-[var(--color-primary)]" />
+          <img src={star} className="h-4 w-4 mx-2" alt="Stevens Institute of Technology Star Icon" />
+          <hr className="flex-grow border-2 border-[var(--color-primary)]" />
         </div>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
-            <label className="block text-gray-700 mb-1 text-left">
+            <label htmlFor="username" className="block text-gray-700 mb-1 text-left">
               Username
             </label>
             <input
+              id="username"
+              aria-required="true"
               type="text"
               value={username}
               onChange={(e) => {
@@ -138,8 +139,10 @@ const LoginCard: React.FC = () => {
           <div className="flex items-center justify-between">
             <label className="inline-flex items-center text-gray-700">
               <input
+                id="keep-signed-in"
                 type="checkbox"
                 className="form-checkbox h-4 w-4 text-[#8C2938]"
+                aria-label="Keep me signed in"
               />
               <span className="ml-2">Keep me signed in</span>
             </label>
