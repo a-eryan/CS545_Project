@@ -41,10 +41,10 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
   }, []);
 
   const userSelect = (
-    <div className="absolute right-[20px] top-[70px] w-40" ref={userSelectRef}>
+    <div className="absolute right-[35px] top-[70px] w-40 z-50" ref={userSelectRef}>
       <div className="relative bg-[var(--color-main-text)] text-white rounded p-3 shadow-md text-xl">
         <div
-          className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-0 h-0 
+          className="absolute -top-2 left-20 w-0 h-0 
         border-l-8 border-l-transparent 
         border-r-8 border-r-transparent 
         border-b-8 border-b-gray-800"
@@ -73,21 +73,26 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <nav className="fixed z-40 h-[80px] w-full bg-[var(--color-primary)] text-[var(--color-white)] p-5 flex justify-between shadow">
-      <div className="flex">
-        <HamburgerButton
-          className="mx-3"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
-        <div className="h-[100%] overflow-hidden" onClick={() => navigate("/")}>
-          <img src={logo} className="max-w-full max-h-full object-contain" />
+      <div className="w-full max-w-none mx-0 px-4 h-full flex items-center">
+        <div className="flex items-center flex-shrink-0 w-auto">
+          <HamburgerButton
+            className="mr-3"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
+          <div className="h-[50px] w-auto" onClick={() => navigate("/")}>
+            <img src={logo} className="h-full w-auto object-contain" />
+          </div>
         </div>
-      </div>
 
-      <Searchbar />
+        <div className="flex-1 px-4 flex justify-center min-w-0">
+          <div className="w-full max-w-[400px] lg:max-w-[500px]">
+            <Searchbar />
+          </div>
+        </div>
 
-      <div className="flex gap-5">
+        <div className="flex items-center gap-4 flex-shrink-0">
         <div className="relative" onClick={() => navigate("/notifications")}>
-          <GoBell size={40} />
+          <GoBell size={50} />
           <span className="absolute -top-1 -right-0 bg-yellow-400 text-[var(--color-primary)] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
           {messageCount}
           </span>
@@ -98,12 +103,13 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
           ref={avatarRef}
           onClick={() => setShowUserSelect(!showUserSelect)}
         >
-          <RxAvatar size={40} />
+          <RxAvatar size={50} />
         </div>
 
         {showUserSelect && userSelect}
 
-        <GoQuestion size={40} onClick={() => navigate("/support")} />
+        <GoQuestion size={50} onClick={() => navigate("/support")} />
+        </div>
       </div>
     </nav>
   );

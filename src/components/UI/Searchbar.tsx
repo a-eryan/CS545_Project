@@ -47,9 +47,9 @@ const Searchbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative" ref={containerRef}>
+    <div className="relative w-full" ref={containerRef}>
       <div
-        className="flex min-w-[400px] items-center text-[1.5rem] border rounded px-2"
+        className="flex w-full items-center text-[1.5rem] border rounded px-2"
         onClick={() => setIsFocus(true)}
       >
         {/*search icon is now always visible */}
@@ -59,7 +59,7 @@ const Searchbar: React.FC = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="What can I help you with today?"
-          className="ml-1 w-full focus:outline-none focus:ring-0 focus:border-transparent"
+          className="ml-1 w-full min-w-0 focus:outline-none focus:ring-0 focus:border-transparent"
         />
       </div>
 
