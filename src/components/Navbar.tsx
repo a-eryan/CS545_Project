@@ -42,9 +42,9 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
 
   const userSelect = (
     <div className="absolute right-[35px] top-[70px] w-40 z-50" ref={userSelectRef}>
-      <div className="relative bg-[var(--color-main-text)] text-white rounded p-3 shadow-md text-xl">
+      <div className="relative bg-[var(--color-main-text)] text-white rounded p-3 shadow-md text-xl ">
         <div
-          className="absolute -top-2 left-20 w-0 h-0 
+          className="absolute -top-2 left-15 w-0 h-0 
         border-l-8 border-l-transparent 
         border-r-8 border-r-transparent 
         border-b-8 border-b-gray-800"

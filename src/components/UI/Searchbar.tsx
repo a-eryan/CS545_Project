@@ -15,6 +15,7 @@ const Searchbar: React.FC = () => {
   const [query, setQuery] = useState("");
   const [isFocus, setIsFocus] = useState(false);
   const [results, setResults] = useState<SearchItem[]>([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const fuse = useRef(
@@ -46,6 +47,14 @@ const Searchbar: React.FC = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="relative w-full" ref={containerRef}>
       <div
@@ -58,7 +67,7 @@ const Searchbar: React.FC = () => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="What can I help you with today?"
+          placeholder={windowWidth > 867 ? "What can I help with you today?" : "Search..."}
           className="ml-1 w-full min-w-0 focus:outline-none focus:ring-0 focus:border-transparent"
         />
       </div>

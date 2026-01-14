@@ -120,11 +120,13 @@ const LoginCard: React.FC = () => {
                       : "focus:ring-[var(--color-primary)]"
                   }
                 `}
+                aria-label = "Password input field"
               />
               <button
                 type="button"
                 className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500"
                 onClick={() => setShowPassword((s) => !s)}
+                aria-label={showPassword ? "Hide password" : "Show password"}
               >
                 <HiOutlineEye className="w-5 h-5" />
               </button>

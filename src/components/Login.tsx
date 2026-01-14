@@ -21,8 +21,8 @@ const LoginPage: React.FC = () => {
           <img src="/logo2x.png" alt="Stevens logo" className="h-24 w-auto" />
         </div>
 
-        <button className="absolute top-0 right-6 h-16 flex items-center">
-          <HiOutlineQuestionMarkCircle className="w-10 h-10 text-white" />
+        <button className="absolute top-0 right-6 h-16 flex items-center px-4" aria-label="Help">
+          <HiOutlineQuestionMarkCircle className="w-12.5 h-12.5 text-white" />
         </button>
       </header>
       <LoginCard />
