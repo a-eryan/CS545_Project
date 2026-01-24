@@ -80,7 +80,7 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
             onClick={() => setMenuOpen(!menuOpen)}
           />
           <div className="h-[50px] w-auto" onClick={() => navigate("/")}>
-            <img src={logo} className="h-full w-auto object-contain" />
+            <img src={logo} className="h-full w-auto object-contain hover:cursor-pointer" alt="Stevens Institute of Technology Logo" title="Return to Home" />
           </div>
         </div>
 
@@ -91,24 +91,25 @@ const Navbar: React.FC<NavProp> = ({ menuOpen, setMenuOpen }) => {
         </div>
 
         <div className="flex items-center gap-4 flex-shrink-0">
-        <div className="relative" onClick={() => navigate("/notifications")}>
-          <GoBell size={50} />
-          <span className="absolute -top-1 -right-0 bg-yellow-400 text-[var(--color-primary)] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-          {messageCount}
-          </span>
-        </div>
+          <div className="relative hover:cursor-pointer" onClick={() => navigate("/notifications")}>
+            <GoBell size={50} title="Notifications" />
+            <span className="absolute -top-1 -right-0 bg-yellow-400 text-[var(--color-primary)] text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+            {messageCount}
+            </span>
+          </div>
 
-        <div
-          className="relative"
-          ref={avatarRef}
-          onClick={() => setShowUserSelect(!showUserSelect)}
-        >
-          <RxAvatar size={50} />
-        </div>
+          <div
+            className="relative hover:cursor-pointer"
+            ref={avatarRef}
+            onClick={() => setShowUserSelect(!showUserSelect)}
+            title ="User Menu"
+          >
+            <RxAvatar size={50} />
+          </div>
 
-        {showUserSelect && userSelect}
+          {showUserSelect && userSelect}
 
-        <GoQuestion size={50} onClick={() => navigate("/support")} />
+          <GoQuestion className="hover:cursor-pointer" size={50} onClick={() => navigate("/support")} title="Support" />
         </div>
       </div>
     </nav>
