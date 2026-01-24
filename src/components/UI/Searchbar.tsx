@@ -1,5 +1,6 @@
 // components/Searchbar.tsx
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { IoSearchOutline } from "react-icons/io5";
 import Fuse from "fuse.js";
 import { searchRoutes } from "../../utils/searchRoutes";
@@ -76,8 +77,8 @@ const Searchbar: React.FC = () => {
         <ul className="absolute z-10 bg-white border rounded w-full mt-1 max-h-60 overflow-auto shadow-lg text-left">
           {results.map((item) => (
             <li key={item.url}>
-              <a
-                href={item.url}
+              <Link
+                to={item.url}
                 className="block px-4 py-2 hover:bg-gray-100 transition text-blue-600 "
                 onClick={() => {
                   setQuery("");
@@ -85,7 +86,7 @@ const Searchbar: React.FC = () => {
                 }}
               >
                 {item.keyword}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
